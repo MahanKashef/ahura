@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "BYekan";
+    src: url("../fonts/BYekan-webfont.eot") format("eot"),
+        url("../fonts/BYekan-webfont.woff") format("woff"),
+        url("../fonts/BYekan-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(30, 31, 29);
+    font-family: 'BYekan' !important;
+}
+
+main {
+    min-height:100vh ;
+    background-image: url(/public/backgroud/4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.roadmap .roadmap-title {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    word-spacing: 10px;
+    margin-top: 20px;
+}
+
+.roadmap > img {
+    width: 1200px;
+    height: 600px;
+    margin-left: 7%;
+}
+
+.underline {
+    margin-top: 10px;
+    padding: 2px;
+    background-color: green;
+    display: block;
+    height: 2px;
+    width: 25%;
+    position: absolute;
+    left: 38%;
+}
+
+main .main-text {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 45%;
+    height: 120px;
+    padding-left:8%;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* filter: blur(2px); */
+    /* letter-spacing: 5px; */
+    backdrop-filter: blur(10px);
+    color: white;
+} 
+
+main .main-text  > p {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.team {
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.team .title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.team > ul {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.team  > ul > li {
+    padding-top: 10px;
+    width: 15%;
+    height: 220px;
+    background-color: #140E0E;
+    text-align: center;
+    margin-right: 10px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+.team  > ul > li > img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.team  > ul > li > .details {
+    padding-top: 10px;
+    color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    color: #e0dbdb;
+    direction: rtl;
+    font-size: 20px;
+}
+
+.features .prmanagement-features > p {
+    margin-bottom: 20px;
+}
+
+.features .prmanagement-features > ul {
+    list-style: decimal-leading-zero;
+}
+
+.features .prmanagement-features > ul > li {
+    margin-top: 5px;
+}
+
+.features .crm-features > ul {
+    list-style: decimal-leading-zero;
+}
+
+.features .crm-features > ul > li {
+    margin-top: 5px;
+}
+
+.features .crm-features > p {
+    margin-bottom: 20px;
+}
