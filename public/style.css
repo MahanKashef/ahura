@@ -20,12 +20,135 @@ body {
 
 main {
     min-height:100vh ;
-    background-image: url(/public/backgroud/4.jpg);
+    background-image: linear-gradient(to bottom, rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)) , url(/public/backgroud/group1.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+    
+}
+
+main .main-text {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    width: 50%;
+    height: 120px;
+    padding-left:8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    position: relative;
+} 
+
+main .main-text  > h1 {
+    position: absolute;
+}
+
+main .main-text > p {
+    font-family: 'BYekan';
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    line-height: 1.75em;
+    margin-top: 120px;
+    font-size: 20px;
+    color: rosybrown;
+    right: 0;
+    left: 5%;
+}
+
+main .main-text > span {
+    width: 100%;
+    margin-top: 230px;
+    font-size: 20px;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    color: #e0dbdb;
+    direction: rtl;
+    font-size: 20px;
+    position: relative;
+    height: 920px;
+    margin-top: 50px;
+}
+
+.features > h1 {
+    text-align: center;
+}
+
+.features .prmanagement-features {
+    margin-top: 125px;
+    position: absolute;
+    right: 10%;
+}
+
+.features .prmanagement-features > p {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.features .prmanagement-features > ul {
+    list-style: decimal-leading-zero;
+}
+
+.features .prmanagement-features > ul > li {
+    margin-top: 5px;
+    background-color: rgb(219, 29, 29);
+    padding: 10px;
+    transition:all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.features .prmanagement-features > ul > li:hover {
+    background-color: purple;
+}
+
+.features .crm-features {
+    margin-top: 125px;
+    position: absolute;
+    left: 10%;
+}
+
+.features .crm-features > ul {
+    list-style: decimal-leading-zero;
+}
+
+.features .crm-features > ul > li {
+    margin-top: 5px;
+    background-color: rgb(219, 29, 29);
+    padding: 10px;
+    transition:all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.features .crm-features > ul > li:hover{
+    background-color: purple;
+}
+
+
+.features .crm-features > p {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.funderline {
+    height: 2px;
+    background-color: red;
+    margin-top: 70px;
+}
+
+.roadmap {
+    height: 520px;
+    width: 100%;
+    margin-top: 75px;
+    position: relative;
 }
 
 .roadmap .roadmap-title {
@@ -53,30 +176,19 @@ main {
     left: 38%;
 }
 
-main .main-text {
-    display: flex;
-    align-self: center;
-    align-items: center;
-    width: 45%;
-    height: 120px;
-    padding-left:8%;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* filter: blur(2px); */
-    /* letter-spacing: 5px; */
-    backdrop-filter: blur(10px);
-    color: white;
-} 
-
-main .main-text  > p {
-    margin-right: 20px;
-    font-size: 25px;
+.tunderline {
+    height: 2px;
+    background-color: purple;
+    width: 100%;
+    margin-top: 50px;
+    position: absolute;
 }
 
 .team {
     margin-top: 50px;
     padding: 50px 0;
+    position: relative;
+    
 }
 
 .team .title {
@@ -87,6 +199,7 @@ main .main-text  > p {
 }
 
 .team > ul {
+    margin-top: 80px;
     margin-top: 20px;
     display: flex;
     list-style: none;
@@ -100,8 +213,14 @@ main .main-text  > p {
     background-color: #140E0E;
     text-align: center;
     margin-right: 10px;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    transition: all ease-in-out 0.2s;
+    box-shadow: 10px 5px 5px rgb(27, 26, 26);
+}
+
+.team  > ul > li:hover {
+    border-color: purple;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;  
 }
 
 .team  > ul > li > img {
@@ -115,34 +234,11 @@ main .main-text  > p {
     color: white;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    color: #e0dbdb;
-    direction: rtl;
-    font-size: 20px;
+.team  > ul > li > .details > p {
+    font-size: 18px;
 }
 
-.features .prmanagement-features > p {
-    margin-bottom: 20px;
-}
-
-.features .prmanagement-features > ul {
-    list-style: decimal-leading-zero;
-}
-
-.features .prmanagement-features > ul > li {
-    margin-top: 5px;
-}
-
-.features .crm-features > ul {
-    list-style: decimal-leading-zero;
-}
-
-.features .crm-features > ul > li {
-    margin-top: 5px;
-}
-
-.features .crm-features > p {
-    margin-bottom: 20px;
+.team  > ul > li > .details > .response {
+    margin-top: 10px;
+    color: gray;
 }
